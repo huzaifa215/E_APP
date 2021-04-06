@@ -1,7 +1,9 @@
+import 'package:Eitox/src/utils/StaticRes.dart';
+import 'package:Eitox/src/view/details/ProductDetail.dart';
 import 'package:flutter/material.dart';
-import 'package:jin_ecomm/src/view/products/models/Product.dart';
-import 'package:jin_ecomm/src/utils/StaticRes.dart';
-import 'package:jin_ecomm/src/view/details/ProductDetail.dart';
+
+import 'models/Product.dart';
+
 
 class ProductList extends StatelessWidget {
   @override

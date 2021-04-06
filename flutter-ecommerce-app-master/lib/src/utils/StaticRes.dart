@@ -1,5 +1,5 @@
+import 'package:Eitox/src/view/products/models/Product.dart';
 import 'package:flutter/material.dart';
-import 'package:jin_ecomm/src/view/products/models/Product.dart';
 
 class Res{
 

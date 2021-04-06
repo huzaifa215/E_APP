@@ -1,5 +1,5 @@
+import 'package:Eitox/src/view/home/HomePage.dart';
 import 'package:flutter/material.dart';
-import 'package:jin_ecomm/src/view/home/HomePage.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:lottie/lottie.dart';
 
@@ -30,7 +30,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   void initState(){
     // set the time for the splash screen
-    Future.delayed(Duration(seconds: 2),(){
+    Future.delayed(Duration(seconds: 5),(){
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => HomePage()));
     });

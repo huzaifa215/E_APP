@@ -1,9 +1,10 @@
+import 'package:Eitox/src/utils/TextUtility.dart';
+import 'package:Eitox/src/view/pay/Payment.dart';
+import 'package:Eitox/src/view/products/models/Product.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jin_ecomm/src/view/products/models/Product.dart';
-import 'package:jin_ecomm/src/utils/TextUtility.dart';
-import 'package:jin_ecomm/src/view/pay/Payment.dart';
+
 
 class ProductCart extends StatelessWidget {
   ProductCart({Key key, this.productList}) : super(key: key);
