@@ -11,31 +11,32 @@ class EcommApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: 'Arial'),
       home: SplashScreen(),
     );
   }
 }
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  void initState(){
+  void initState() {
     // set the time for the splash screen
-    Future.delayed(Duration(seconds: 5),(){
+    Future.delayed(Duration(seconds: 5), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => HomePage()));
     });
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,15 +45,22 @@ class _SplashScreenState extends State<SplashScreen> {
         alignment: Alignment.center,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(height: 300.0,width: 300.0,
-                child: Lottie.asset("assets/splashbackground.json"),
-              ),
-              SizedBox(height: 20,),
-              Text("Eitox", style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-            ],
-           ),
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 300.0,
+              width: 300.0,
+              child: Lottie.asset("assets/splashbackground.json"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              "Eitox",
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
       ),
     );
     // return AnimatedSplashScreen(
@@ -63,5 +71,3 @@ class _SplashScreenState extends State<SplashScreen> {
     //     nextScreen: HomePage(title: 'Login',));
   }
 }
-
-
